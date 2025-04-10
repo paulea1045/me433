@@ -32,7 +32,7 @@ int main() {
     // Initialize button GPIO
     gpio_init(BUTTON_PIN);
     gpio_set_dir(BUTTON_PIN, GPIO_IN);
-    gpio_pull_up(BUTTON_PIN);  // Use pull-up resistor
+    gpio_pull_up(BUTTON_PIN); 
 
     // Set up interrupt on falling edge (button press)
     gpio_set_irq_enabled_with_callback(BUTTON_PIN, GPIO_IRQ_EDGE_FALL, true, &button_callback);
