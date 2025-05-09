@@ -70,8 +70,6 @@ int main()
 
         ssd1306_update();
 
-        printf("Total time: %llu ms, FPS: %.2f\n", t_elapsed, fps);
-
         gpio_put(PICO_DEFAULT_LED_PIN, 0);
         sleep_ms(500);  // Delay so numbers change more visibly
 
